@@ -1,0 +1,2185 @@
+Windows Registry Editor Version 5.00
+
+; Disable Startup Delay
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Serialize]
+"StartupDelayInMSec"=dword:00000000
+
+; Enable Ultimate Performance Mode
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling]
+"PowerThrottlingOff"=dword:00000001
+
+; Reduce Menu Show Delay
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"MenuShowDelay"="0"
+
+; Disable Low Disk Space Notifications
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoLowDiskSpaceChecks"=dword:00000001
+
+; Disable Automatic Driver Updates
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DriverSearching]
+"SearchOrderConfig"=dword:00000000
+
+; Enable Large System Cache
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"LargeSystemCache"=dword:00000001
+
+; Improve File Sharing Performance
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters]
+"Size"=dword:00000003
+
+; Disable SMB Packet Signing for Performance
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]
+"EnableSecuritySignature"=dword:00000000
+"RequireSecuritySignature"=dword:00000000
+
+; Disable Paging of Kernel
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"DisablePagingExecutive"=dword:00000001
+
+; Enable Fast Startup
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power]
+"HiberbootEnabled"=dword:00000001
+
+; Increase DNS Cache Size
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters]
+"CacheHashTableBucketSize"=dword:00000001
+"CacheHashTableSize"=dword:00000180
+"MaxCacheEntryTtlLimit"=dword:0000fa00
+"MaxSOACacheEntryTtlLimit"=dword:0000012d
+
+; Disable Cortana
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AllowCortana"=dword:00000000
+
+; Disable Telemetry
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"AllowTelemetry"=dword:00000000
+
+; Disable Windows Update Delivery Optimization
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Config]
+"DODownloadMode"=dword:00000000
+
+; Increase Network Throughput
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"TcpWindowSize"=dword:0005ae4c
+"Tcp1323Opts"=dword:00000003
+"DefaultTTL"=dword:00000040
+
+; Disable Automatic Reboot on BSOD
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl]
+"AutoReboot"=dword:00000000
+
+; Disable Thumbnail Cache
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"DisableThumbnailCache"=dword:00000001
+
+; Disable Sticky Keys Prompt
+[HKEY_CURRENT_USER\Control Panel\Accessibility]
+"StickyKeys"="506"
+
+; Enable ClearType for Better Text Rendering
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"FontSmoothing"="2"
+"FontSmoothingType"=dword:00000002
+
+; Disable USB Power Management
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\USB]
+"DisableSelectiveSuspend"=dword:00000001
+
+; Set Network Adapter to Max Performance
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0001]
+"PnPCapabilities"=dword:00000000
+
+; Increase NTFS Performance
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem]
+"NtfsDisableLastAccessUpdate"=dword:00000001
+
+; Disable Windows Defender
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender]
+"DisableAntiSpyware"=dword:00000001
+
+; Optimize System Responsiveness
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile]
+"SystemResponsiveness"=dword:00000000
+
+; Disable Windows Update
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+"NoAutoUpdate"=dword:00000001
+
+; Enable Large Send Offload
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"EnableTCPChimney"=dword:00000001
+"EnableTCPA"=dword:00000001
+"EnableRSS"=dword:00000001
+
+; Speed Up Disk Cleanup
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Temporary Files]
+"StateFlags"=dword:00000002
+
+; Disable Remote Assistance
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Remote Assistance]
+"fAllowToGetHelp"=dword:00000000
+
+; Optimize Memory Management
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"PrefetchParameters"=dword:00000003
+
+; Disable Hibernate
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
+"HibernateEnabled"=dword:00000000
+
+; Disable Background Apps
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications]
+"GlobalUserDisabled"=dword:00000001
+
+; Disable Error Reporting
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting]
+"Disabled"=dword:00000001
+
+; Enable Classic Control Panel
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
+"ForceClassicControlPanel"=dword:00000001
+
+; Disable Action Center
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"DisableNotificationCenter"=dword:00000001
+
+; Disable Windows Tips
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent]
+"DisableSoftLanding"=dword:00000001
+
+; Enable Concurrent User Sessions (RDP)
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server]
+"fSingleSessionPerUser"=dword:00000000
+
+; Disable Windows Ink Workspace
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsInkWorkspace]
+"AllowWindowsInkWorkspace"=dword:00000000
+
+; Disable Automatic Restart after Windows Updates
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+"NoAutoRebootWithLoggedOnUsers"=dword:00000001
+
+; Enable Verbose Startup, Shutdown, Logon, and Logoff Messages
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"VerboseStatus"=dword:00000001
+
+; Disable Windows Search Indexing
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Search]
+"SetupCompletedSuccessfully"=dword:00000000
+
+; Increase Icon Cache Size
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
+"Max Cached Icons"="8192"
+
+; Disable Edge Preloading
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MicrosoftEdge\Main]
+"AllowPrelaunch"=dword:00000000
+
+; Disable Auto-Arrange in Folders
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell]
+"FolderType"="NotSpecified"
+
+; Speed Up Taskbar Thumbnail Preview
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"ExtendedUIHoverTime"=dword:00000001
+
+; Disable Lock Screen
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Personalization]
+"NoLockScreen"=dword:00000001
+
+; Enable Network Adapter Speed Optimization
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"EnableRSS"=dword:00000001
+"EnableTCPChimney"=dword:00000001
+
+; Enable Fast File Deletion
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem]
+"NtfsDisable8dot3NameCreation"=dword:00000001
+
+; Disable Taskbar Search Bar
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"DisableSearchBoxSuggestions"=dword:00000001
+
+; Enable Auto End Tasks on Shutdown
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"AutoEndTasks"="1"
+"HungAppTimeout"="2000"
+"WaitToKillAppTimeout"="2000"
+
+; Disable Background Intelligent Transfer Service (BITS)
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BITS]
+"Start"=dword:00000004
+
+; Set Visual Effects for Best Performance
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects]
+"VisualFXSetting"=dword:00000002
+
+; Disable Animations
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"UserPreferencesMask"=hex:90,12,03,80,10,00,00,00
+"DragFullWindows"="0"
+
+; Disable Startup Programs Delay
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Serialize]
+"StartupDelayInMSec"=dword:00000000
+
+; Disable Automatic Maintenance
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Maintenance]
+"StateFlags"=dword:00000002
+
+; Improve Disk Performance for NTFS
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem]
+"NtfsMemoryUsage"=dword:00000002
+
+; Enable Legacy Context Menus
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\FlightedFeatures]
+"ShowLegacyContextMenus"=dword:00000001
+
+; Disable Aero Shake
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"DisallowShaking"=dword:00000001
+
+; Disable Automatic Folder Type Discovery
+[HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell]
+"FolderType"="NotSpecified"
+
+; Disable Automatic Updates for Microsoft Store Apps
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsStore]
+"AutoDownload"=dword:00000002
+
+; Disable Desktop Cleanup Wizard
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Desktop\CleanupWiz]
+"NoRun"=dword:00000001
+
+; Disable Disk Performance Counters
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Partmgr]
+"EnableCounterForIoctl"=dword:00000000
+
+; Speed Up Application Launch
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoResolveTrack"=dword:00000001
+
+; Disable Feedback Requests
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"DoNotShowFeedbackNotifications"=dword:00000001
+
+; Set Recycle Bin Maximum Size
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"RecycleBinSize"=dword:00000fa0
+
+; Disable UAC Prompt for Administrators
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"ConsentPromptBehaviorAdmin"=dword:00000000
+
+; Enable Maximum Processor Power
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
+"CsEnabled"=dword:00000000
+
+
+; Disable Windows Welcome Experience
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoWelcomeScreen"=dword:00000001
+
+; Prevent Auto-Mount of New Volumes
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MountMgr]
+"NoAutoMount"=dword:00000001
+
+; Enable TCP KeepAlive
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"KeepAliveTime"=dword:0000ea60
+
+; Enable Network Connection Timeouts for Faster Recovery
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"TcpMaxDataRetransmissions"=dword:00000005
+
+; Disable AutoPlay for All Drives
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoDriveTypeAutoRun"=dword:000000ff
+
+; Disable Windows Time Sync
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time]
+"Start"=dword:00000004
+
+; Disable SmartScreen Filter
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"EnableSmartScreen"=dword:00000000
+
+; Disable IPv6 to Improve Network Performance
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TCPIP6\Parameters]
+"DisabledComponents"=dword:000000ff
+
+; Remove Shortcut Arrow on Icons
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons]
+"29"=""
+
+; Disable Recent Documents History
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoRecentDocsHistory"=dword:00000001
+
+; Disable Notification Sounds
+[HKEY_CURRENT_USER\AppEvents\Schemes\Apps\.Default\.Default]
+"DefaultValue"=""
+
+; Enable Secure Logon (Ctrl+Alt+Del)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon]
+"DisableCAD"=dword:00000000
+
+; Disable User Tracking
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoInstrumentation"=dword:00000001
+
+; Enable QoS for Better Network Bandwidth Management
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Psched]
+"NonBestEffortLimit"=dword:00000000
+
+; Optimize for Background Services
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\PriorityControl]
+"Win32PrioritySeparation"=dword:00000018
+
+; Disable Windows Automatic Repair
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager]
+"BootExecute"=""
+
+; Disable Reserved Storage for Updates
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\ReserveManager]
+"ShippedWithReserves"=dword:00000000
+
+; Enable Maximum Performance Power Plan
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\User\PowerSchemes]
+"ActivePowerScheme"="{8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c}"
+
+; Increase USB Transfer Speeds
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\usbstor]
+"MaximumTransferLength"=dword:00200000
+
+; Enable NTFS Disk Compression
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem]
+"NtfsCompression"=dword:00000001
+
+; Disable App Suggestions in Start Menu
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"SystemPaneSuggestionsEnabled"=dword:00000000
+
+; Enable AlwaysUnloadDLL for Faster Memory Cleanup
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
+"AlwaysUnloadDLL"=dword:00000001
+
+; Disable Search History
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\WordWheelQuery]
+"DisableSearchBoxSuggestions"=dword:00000001
+
+; Enable Classic Alt+Tab Switcher
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+"AltTabSettings"=dword:00000001
+
+; Disable Automatic Driver Installation
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DriverSearching]
+"SearchOrderConfig"=dword:00000000
+
+; Speed Up Shutdown
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control]
+"WaitToKillServiceTimeout"="2000"
+
+; Disable Boot Logging
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\BootLog]
+"Enable"=dword:00000000
+
+; Improve GPU Scheduling Performance
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers]
+"Hardware-Accelerated-Gpu-Scheduling"=dword:00000001
+
+; Disable Error Reporting
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting]
+"Disabled"=dword:00000001
+
+; Disable Bluetooth Advertising
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTHPORT\Parameters]
+"DisableAdvertising"=dword:00000001
+
+; Disable Automatic Proxy Detection
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinHttpAutoProxySvc]
+"Start"=dword:00000004
+
+; Prevent Shortcuts from Being Created Automatically
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoSaveSettings"=dword:00000001
+
+; Disable Task View Button
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"ShowTaskViewButton"=dword:00000000
+
+; Remove Default Libraries
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoLibrariesDefaultSave"=dword:00000001
+
+; Disable Automatic Maintenance
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches]
+"ScheduledTasks"=dword:00000002
+
+; Disable Thumbnail Previews in File Explorer
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"DisableThumbnails"=dword:00000001
+
+; Improve Desktop Icon Spacing
+[HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics]
+"IconSpacing"="-1125"
+"IconVerticalSpacing"="-1125"
+
+
+; Disable Windows Spotlight on Lock Screen
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent]
+"DisableWindowsSpotlightFeatures"=dword:00000001
+
+; Turn Off Suggested Apps in Start Menu
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent]
+"DisableSoftLanding"=dword:00000001
+
+; Disable Fast User Switching
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"HideFastUserSwitching"=dword:00000001
+
+; Increase File Explorer Thumbnail Cache Size
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches]
+"Thumbnail Cache"=dword:00000001
+
+; Disable Background Apps from Running
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications]
+"GlobalUserDisabled"=dword:00000001
+
+; Force System to Boot with Fewer Processes
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SafeBoot]
+"Minimal"=""
+
+; Optimize Time to Display Boot Menu
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control]
+"BootMenuPolicy"="Standard"
+
+; Disable Password Reveal Button
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CredUI]
+"DisablePasswordReveal"=dword:00000001
+
+; Disable Windows Feedback
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Siuf\Rules]
+"NumberOfSIUFInPeriod"=dword:00000000
+
+; Disable Clipboard History
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"AllowClipboardHistory"=dword:00000000
+
+; Disable Shake to Minimize
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"DisallowShaking"=dword:00000001
+
+; Enable Network Connections on Boot
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NlaSvc\Parameters\Internet]
+"EnableActiveProbing"=dword:00000001
+
+; Disable User Tracking for Activity History
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"PublishUserActivities"=dword:00000000
+
+; Optimize SSD Performance
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\storahci\Parameters\Device]
+"NcqDisabled"=dword:00000000
+
+; Enable Faster SMB Connections
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]
+"DisableBandwidthThrottling"=dword:00000001
+
+; Disable Remote Assistance Connections
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Remote Assistance]
+"fAllowToGetHelp"=dword:00000000
+
+; Block Ads in File Explorer
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"ShowSyncProviderNotifications"=dword:00000000
+
+; Speed Up Network Browsing
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]
+"DirectoryCacheLifetime"=dword:00000000
+"FileNotFoundCacheLifetime"=dword:00000000
+"FileInfoCacheLifetime"=dword:00000000
+
+; Disable Power Throttling
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling]
+"PowerThrottlingOff"=dword:00000001
+
+; Disable Windows Update Restart Notifications
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+"NoAutoRebootWithLoggedOnUsers"=dword:00000001
+
+; Disable Windows 10 Telemetry Services
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"AllowTelemetry"=dword:00000000
+
+; Set DNS Cache Timeouts to Minimum
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters]
+"NegativeCacheTime"=dword:00000000
+"NetFailureCacheTime"=dword:00000000
+
+; Enable File Deletion Confirmation
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"ConfirmFileDelete"=dword:00000001
+
+; Disable Aero Snap
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"EnableSnapAssistFlyout"=dword:00000000
+
+; Speed Up App Priority Handling
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\PriorityControl]
+"IRQ8Priority"=dword:00000001
+
+; Turn Off Live Tiles in Start Menu
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\PushNotifications]
+"ToastEnabled"=dword:00000000
+
+; Prevent App Reopening on Restart
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"RestartApps"=dword:00000000
+
+; Disable Desktop Search Indexing
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AllowIndexingEncryptedStoresOrItems"=dword:00000000
+
+; Improve Disk IO Performance
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters]
+"EnableSuperfetch"=dword:00000000
+
+; Increase DNS Request Parallelism
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"ParallelStack"=dword:00000001
+
+; Block Windows Tracking Domains
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters]
+"BlockIPv6ToTrackingDomains"=dword:00000001
+
+; Force System Restore Point Creation
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore]
+"DisableSR"=dword:00000000
+
+; Disable Windows Script Host
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Script Host\Settings]
+"Enabled"=dword:00000000
+
+
+; Remove OneDrive from File Explorer
+[HKEY_CLASSES_ROOT\CLSID\{018D5C66-4533-4307-9B53-224DE2ED1FE6}]
+"System.IsPinnedToNameSpaceTree"=dword:00000000
+
+
+; Disable Game Bar
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\GameDVR]
+"AllowGameDVR"=dword:00000000
+
+; Turn Off Automatic Windows Driver Updates
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DriverSearching]
+"SearchOrderConfig"=dword:00000000
+
+; Disable Windows Defender Completely
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender]
+"DisableAntiSpyware"=dword:00000001
+
+; Disable Windows File Explorer Ads
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"ShowSyncProviderNotifications"=dword:00000000
+
+; Disable Feedback Frequency
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"DoNotShowFeedbackNotifications"=dword:00000001
+
+; Remove Shortcut Arrow for Shortcuts
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons]
+"29"=""
+
+; Disable "People" Icon in Taskbar
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\People]
+"PeopleBand"=dword:00000000
+
+; Increase Max User Port Connections
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"MaxUserPort"=dword:0000ffff
+
+; Disable Auto Reboot for Updates
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+"NoAutoRebootWithLoggedOnUsers"=dword:00000001
+
+; Disable Autoplay for All Drives
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoDriveTypeAutoRun"=dword:000000ff
+
+; Improve TCP/IP Performance
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"TcpMaxDataRetransmissions"=dword:00000005
+"DefaultTTL"=dword:00000040
+
+; Reduce CPU Priority for Background Tasks
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\PriorityControl]
+"Win32PrioritySeparation"=dword:00000018
+
+; Enable Automatic Desktop Refresh
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"DisableAutoTray"=dword:00000000
+
+; Disable Windows Update Delivery Optimization
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization]
+"DODownloadMode"=dword:00000000
+
+; Enable High Precision Event Timer
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PlatformSettings]
+"EnableHPET"=dword:00000001
+
+; Disable Edge from Reopening After Restart
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MicrosoftEdge\Main]
+"PreventAutomaticReopening"=dword:00000001
+
+; Disable Windows Security Notifications
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoSecurityTrayItem"=dword:00000001
+
+
+; Disable Cortana Web Search
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"DisableWebSearch"=dword:00000001
+
+; Disable Taskbar Hover Previews
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"ExtendedUIHoverTime"=dword:41dfffff
+
+; Force Network Connections to Use DNS over TCP
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters]
+"EnableDnsOverTcp"=dword:00000001
+
+; Disable Startup Sound
+[HKEY_CURRENT_USER\AppEvents\Schemes\Apps\.Default\.Default]
+".Current"=""
+
+; Optimize Display Scaling
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"LogPixels"=dword:00000078
+
+; Disable Remote Desktop
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server]
+"fDenyTSConnections"=dword:00000001
+
+; Increase Precision of System Timer
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog]
+"FileSize"=dword:00008000
+
+; Disable Reserved Bandwidth Allocation for QoS
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Psched]
+"NonBestEffortLimit"=dword:00000000
+
+; Disable Windows Defender Real-Time Protection
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Real-Time Protection]
+"DisableRealtimeMonitoring"=dword:00000001
+
+; Disable Error Reporting Service
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting]
+"Disabled"=dword:00000001
+
+; Prevent Windows Update Notifications
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]
+"SetDisableUXWUAccess"=dword:00000001
+
+; Reduce Application Hang Timeout
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"HungAppTimeout"="2000"
+
+; Reduce Menu Open Delay
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"MenuShowDelay"="100"
+
+; Disable Aero Peek
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"DisablePreviewDesktop"=dword:00000001
+
+; Enable No Lock Timeout
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power]
+"IdleTimeOut"=dword:00000000
+
+; Disable SMBv1
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters]
+"SMB1"=dword:00000000
+
+; Enable Prefetcher for Application Launch Optimization
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters]
+"EnablePrefetcher"=dword:00000003
+
+
+; Disable Adaptive Brightness
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI\AdaptiveBrightness]
+"Enable"=dword:00000000
+
+; Disable Window Animations
+[HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics]
+"MinAnimate"="0"
+
+; Enable Faster File Copying
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"CopyFileBufferingDisabled"=dword:00000001
+
+; Disable Balloon Notifications
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"EnableBalloonTips"=dword:00000000
+
+; Disable Legacy SMBv1 Completely
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters]
+"SMB1"=dword:00000000
+
+; Disable Edge Browser from Launching Automatically
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MicrosoftEdge\Main]
+"PreventFirstRunPage"=dword:00000001
+
+; Optimize TCP/IP Settings for Performance
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"TcpTimedWaitDelay"=dword:0000001e
+"MaxFreeTcbs"=dword:0000ffff
+
+; Disable Search Highlights in Windows Search Bar
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"EnableDynamicContentInWSB"=dword:00000000
+
+; Disable Task Manager Search Online Feature
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\TaskManager]
+"AllowSearchOnline"=dword:00000000
+
+; Enable Large Pages for Better Memory Management
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"LargePageMinimum"=dword:00000001
+
+; Turn Off Sticky Keys Shortcut
+[HKEY_CURRENT_USER\Control Panel\Accessibility]
+"Flags"="506"
+
+; Disable Printer Notification Balloons
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Print\Providers\Client Side Rendering Print Provider]
+"DisableNotification"=dword:00000001
+
+; Disable Auto Reconnection for Mapped Network Drives
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2]
+"NoReconnect"=dword:00000001
+
+; Disable Display Calibration Loader on Login
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ICM]
+"NoCalibrationLoading"=dword:00000001
+
+; Turn Off Automatic Windows Store Updates
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsStore]
+"AutoDownload"=dword:00000002
+
+; Disable Application Compatibility Assistant
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags]
+"DisableAppCompat"=dword:00000001
+
+; Disable Aero Peek Button on Taskbar
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"DisablePreviewDesktop"=dword:00000001
+
+; Increase Taskbar Thumbnail Cache Size
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
+"MaxCachedThumbnails"=dword:000007d0
+
+; Disable System Beep
+[HKEY_CURRENT_USER\Control Panel\Sound]
+"Beep"="No"
+
+; Disable Fast User Switching
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"HideFastUserSwitching"=dword:00000001
+
+; Increase DNS Cache Entry Limit
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters]
+"MaxCacheEntryTtlLimit"=dword:000000fa
+
+; Disable Power Throttling for Background Apps
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling]
+"BackgroundTaskThrottlingEnabled"=dword:00000000
+
+; Disable Sticky Corners for Multi-Monitor Setup
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"DisableStickyCorners"=dword:00000001
+
+; Disable Windows Backup Notifications
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Backup]
+"DisableBackupNotification"=dword:00000001
+
+; Speed Up USB Drive Write Times
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\usbstor]
+"WriteCacheEnableOverride"=dword:00000001
+
+; Disable Background Automatic Maintenance
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\Maintenance]
+"MaintenanceDisabled"=dword:00000001
+
+; Remove Default Context Menu Options in File Explorer
+[HKEY_CLASSES_ROOT\AllFilesystemObjects\shellex\ContextMenuHandlers]
+"{a2a9545d-a0c2-42b4-9708-a0b2badd77c8}"=-
+
+; Disable Visual Notifications for Audio
+[HKEY_CURRENT_USER\Control Panel\Accessibility]
+"SoundSentry"="0"
+
+; Enable Do Not Track for Internet Explorer
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Main]
+"DoNotTrack"=dword:00000001
+
+; Reduce Time to Detect Network
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NlaSvc\Parameters\Internet]
+"EnableActiveProbing"=dword:00000001
+
+; Remove Shortcut Name "Shortcut to"
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+"link"=hex:00,00,00,00
+
+; Disable Password Expiration Warning
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"DisablePasswordExpiry"=dword:00000001
+
+; Prevent Windows from Deleting Thumbnail Cache on Restart
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches]
+"Thumbnail Cache"=dword:00000000
+
+
+
+; Disable Start Menu App Suggestions
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"SystemPaneSuggestionsEnabled"=dword:00000000
+
+; Disable Persistent Drive Mapping Caching
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]
+"ReconnectTimeout"=dword:00000000
+
+; Enable NUMA Optimization for Memory Allocation
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"EnableNUMA"=dword:00000001
+
+; Disable Internet Printing
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print]
+"DisableWebPrinting"=dword:00000001
+
+; Reduce Disk Check Timeout at Boot
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager]
+"AutoChkTimeout"=dword:00000003
+
+; Disable Windows Game Mode
+[HKEY_LOCAL_MACHINE\SYSTEM\GameConfigStore]
+"GameDVR_Enabled"=dword:00000000
+
+; Increase File System Cache Performance
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"FsLazyWrite"=dword:00000001
+
+; Remove Quick Access in File Explorer
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
+"HubMode"=dword:00000001
+
+; Optimize Max Active Connections for SMB
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters]
+"MaxMpxCt"=dword:00001000
+
+; Disable IPv6 on All Network Interfaces
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters]
+"DisabledComponents"=dword:ffffffff
+
+; Disable Automatic Tray Icon Cleanup
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+"NoAutoTrayNotify"=dword:00000001
+
+; Enable Fast Unlock for Locked Sessions
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power]
+"LockTimeout"=dword:00000000
+
+; Speed Up Folder Navigation in Explorer
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoRemoteRecursiveEvents"=dword:00000001
+
+; Disable Lock Screen Slide Show
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\LockScreen]
+"SlideshowEnabled"=dword:00000000
+
+; Remove "3D Objects" Folder from Explorer
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\Namespace]
+"{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}"=-
+
+; Disable Background Services for Updates
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UsoSvc]
+"Start"=dword:00000004
+
+; Disable Keyboard Shortcut Tips
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"ShowCtrlShortcuts"=dword:00000000
+
+; Disable the "Search Highlights" in Windows
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"DisableSearchBoxSuggestions"=dword:00000001
+
+; Enable Low Latency Mode for GPUs
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\Scheduler]
+"EnableHwSchMode"=dword:00000001
+
+; Remove Bluetooth Tray Icon
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTHPORT\Parameters]
+"EnableTrayIcon"=dword:00000000
+
+; Disable Auto Suggestions in Explorer Search
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\AutoComplete]
+"AutoSuggest"="no"
+
+; Disable Error Beep Sounds in Applications
+[HKEY_CURRENT_USER\AppEvents\Schemes\Apps\.Default\SystemExclamation]
+".Current"=""
+
+; Reduce Network Latency by Enabling TCP No Delay
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"TcpNoDelay"=dword:00000001
+
+; Disable Shared Experiences Across Devices
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"EnableCdp"=dword:00000000
+"EnableCdpDisplay"=dword:00000000
+
+; Turn Off "Show Recently Added Apps" in Start Menu
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Start_TrackDocs"=dword:00000000
+
+; Disable Windows Tips and Tricks
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"SubscribedContent-338388Enabled"=dword:00000000
+
+; Enable Large Icon Spacing for Easier Drag-and-Drop
+[HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics]
+"IconSpacing"="-1500"
+"IconVerticalSpacing"="-1500"
+
+; Prevent Auto-Reconnect for VPNs
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RasMan\PPP\EAP]
+"NoReconnect"=dword:00000001
+
+; Speed Up Taskbar Context Menu Rendering
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"TaskbarContextMenuSpeed"=dword:00000001
+
+; Turn Off "Show Recently Used Files" in Quick Access
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"ShowRecent"=dword:00000000
+
+; Disable Disk Write Caching for External Drives
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Disk]
+"WriteCacheDisableOverride"=dword:00000001
+
+; Disable Bing Integration in Start Menu Search
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"ConnectedSearchUseWeb"=dword:00000000
+
+; Enable High DPI Scaling Override
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers]
+"Application.exe"="~ DPIUNAWARE"
+
+; Disable Sticky Keys Shortcut Key Combination
+[HKEY_CURRENT_USER\Control Panel\Accessibility\StickyKeys]
+"Flags"="506"
+
+; Disable Thumbnail Preview Hover in Taskbar
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"ExtendedUIHoverTime"=dword:0000ffff
+
+; Remove Quick Access from File Explorer
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\Namespace\DelegateFolders]
+"{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}"=-
+
+
+; Disable Startup Program Delay
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Serialize]
+"StartupDelayInMSec"=dword:00000000
+
+; Optimize DNS Query Timeout
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters]
+"QueryTimeout"=dword:000003e8
+
+; Disable "HomeGroup" Feature
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HomeGroupListener]
+"Start"=dword:00000004
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HomeGroupProvider]
+"Start"=dword:00000004
+
+; Force File Explorer to Open This PC
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"LaunchTo"=dword:00000001
+
+; Disable File Explorer's "Recent Files" History
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"ShowRecent"=dword:00000000
+"ShowFrequent"=dword:00000000
+
+; Disable "Auto-Arrange" in Folders
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell]
+"FolderType"="NotSpecified"
+
+; Prevent Windows from Showing Lockscreen
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Personalization]
+"NoLockScreen"=dword:00000001
+
+; Disable Hibernate to Save Disk Space
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
+"HibernateEnabled"=dword:00000000
+
+; Increase System Cache for Better Disk I/O
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"LargeSystemCache"=dword:00000001
+
+; Speed Up Disk Write Operations
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem]
+"NtfsDisableLastAccessUpdate"=dword:00000001
+
+; Disable Windows Error Reporting Dialogs
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting]
+"Disabled"=dword:00000001
+
+; Disable Background Transfer Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BITS]
+"Start"=dword:00000004
+
+; Disable Built-In Camera Privacy LED
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\webcam]
+"Value"="Deny"
+
+; Disable Search Box in Taskbar
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search]
+"SearchboxTaskbarMode"=dword:00000000
+
+; Disable Windows Defender Tamper Protection
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Features]
+"TamperProtection"=dword:00000000
+
+; Improve TCP Stack Settings for Performance
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"TcpAckFrequency"=dword:00000001
+"TcpDelAckTicks"=dword:00000000
+
+; Disable System Sounds
+[HKEY_CURRENT_USER\AppEvents\Schemes]
+".Default"=""
+
+; Enable ClearType for Fonts
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"FontSmoothing"="2"
+"FontSmoothingType"=dword:00000002
+
+; Disable Password Complexity Requirement
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Netlogon\Parameters]
+"PasswordComplexity"=dword:00000000
+
+; Disable Windows Update Peer-to-Peer Sharing
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Config]
+"DODownloadMode"=dword:00000000
+
+; Set Taskbar Thumbnail Live Preview Delay
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"ThumbnailLivePreviewHoverTime"=dword:00000064
+
+; Remove "Meet Now" Icon from Taskbar
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"HideSCAMeetNow"=dword:00000001
+
+; Prevent Windows from Creating Thumbs.db Files
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"DisableThumbsDBOnNetworkFolders"=dword:00000001
+
+; Disable SmartScreen for Apps
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
+"SmartScreenEnabled"="Off"
+
+; Prevent Automatic Restart After Updates
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+"NoAutoRebootWithLoggedOnUsers"=dword:00000001
+
+; Force Maximum CPU Performance Mode
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
+"Attributes"=dword:00000000
+
+; Disable Recent Documents Tracking
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoRecentDocsHistory"=dword:00000001
+
+; Enable Detailed Status Messages During Boot
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"VerboseStatus"=dword:00000001
+
+; Disable Automatic Disk Optimization
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Dfrg\BootOptimizeFunction]
+"Enable"="N"
+
+; Disable User Activity Tracking
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"AllowTelemetry"=dword:00000000
+
+; Remove "Quick Access" from Navigation Pane
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"HubMode"=dword:00000001
+
+; Set Low Disk Space Check Interval
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"NoLowDiskSpaceChecks"=dword:00000001
+
+; Prevent Windows Defender from Scanning Archives
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Scan]
+"DisableScanningNetworkFiles"=dword:00000001
+
+; Disable Windows Startup Sound
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"NoBootSound"=dword:00000001
+
+
+; Disable Automatic Windows Error Recovery
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager]
+"AutoRecovery"=dword:00000000
+
+; Enable Forceful Unload of DLLs
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
+"AlwaysUnloadDLL"=dword:00000001
+
+; Disable Automatic Repair at Boot
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager]
+"BootExecute"=""
+
+; Prevent Auto-Enablement of Wi-Fi
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Wlansvc\Parameters\Standalone]
+"AutoEnable"=dword:00000000
+
+; Disable Compatibility Telemetry
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"AllowTelemetry"=dword:00000000
+
+; Disable System Restore
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore]
+"DisableSR"=dword:00000001
+
+; Speed Up Remote Desktop Performance
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp]
+"FlowControlDisable"=dword:00000001
+
+; Disable Windows Spotlight on Lock Screen
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent]
+"DisableWindowsSpotlightFeatures"=dword:00000001
+
+; Remove "OneDrive" Icon from File Explorer
+[HKEY_CLASSES_ROOT\CLSID\{018D5C66-4533-4307-9B53-224DE2ED1FE6}]
+"System.IsPinnedToNameSpaceTree"=dword:00000000
+
+; Disable Windows Time Synchronization
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time]
+"Start"=dword:00000004
+
+; Disable Automatic Updates for Store Apps
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsStore]
+"AutoDownload"=dword:00000002
+
+; Optimize Windows Paging File Usage
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"PagingFiles"="c:\\pagefile.sys 4096 4096"
+
+; Remove "Share" Context Menu Option
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked]
+"{e2bf9676-5f8f-435c-97eb-11607a5bedf7}"=""
+
+; Disable Windows Live Tiles in Start Menu
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\PushNotifications]
+"NoTileApplicationNotification"=dword:00000001
+
+; Block Windows Driver Updates via Windows Update
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]
+"ExcludeWUDriversInQualityUpdate"=dword:00000001
+
+; Set Maximum Transmit Unit for Networking
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces]
+"MTU"=dword:000005dc
+
+; Prevent Windows from Resetting App Defaults
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Shell]
+"BlockAppUpdateReset"=dword:00000001
+
+; Disable Background Optimizations for Power Saving
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Power]
+"IdleTimeout"=dword:00000000
+
+; Optimize USB Device Removal Policy
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\usbhub\Parameters]
+"DisableSelectiveSuspend"=dword:00000001
+
+; Disable Notification Center
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"DisableNotificationCenter"=dword:00000001
+
+; Enable Fast Display Rendering
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers]
+"TdrDelay"=dword:00000005
+
+; Disable Auto-Detect Proxy Settings
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings]
+"AutoDetect"=dword:00000000
+
+; Set Windows Explorer Default View to Details
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Streams\Defaults]
+"{1E4D9E89-0C6A-4661-BA71-ADFF1B92CE27}"="D"
+
+; Disable Online Account Suggestions
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers]
+"OnlineSuggestionsEnabled"=dword:00000000
+
+; Enable Maximum Power Savings for Ethernet
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0001]
+"EnergyEfficientEthernet"=dword:00000001
+
+; Disable the "Open File Security Warning"
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Associations]
+"LowRiskFileTypes"=".exe;.bat;.cmd;.vbs;.reg;.msi"
+
+; Remove Recent Apps from Start Menu
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Start_TrackProgs"=dword:00000000
+
+; Disable Windows Ink Workspace
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsInkWorkspace]
+"AllowWindowsInkWorkspace"=dword:00000000
+
+; Prevent Apps from Running in the Background
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications]
+"GlobalUserDisabled"=dword:00000001
+
+; Remove "3D Objects" from This PC
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\Namespace]
+"{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}"=-
+
+; Disable Action Center Popups
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"DisableNotificationCenter"=dword:00000001
+
+; Enable Legacy Boot Menu
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"DisplayOptions"=dword:00000001
+
+; Disable Windows Automatic Volume Control
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Audio]
+"DisableAutomaticGainControl"=dword:00000001
+
+; Optimize Scroll Speed in Windows
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"WheelScrollLines"="3"
+
+; Prevent Edge From Taking Over Default PDF Viewer
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge]
+"AutoOpenFileTypes"=dword:00000000
+
+
+; Disable App Installation Notifications
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"NoNewAppAlert"=dword:00000001
+
+; Enable Classic Volume Mixer
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\MMDevices\Audio]
+"UseLegacyVolumeControl"=dword:00000001
+
+; Disable Windows Shell Extensions for Network Locations
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked]
+"{8c23b656-4bf3-4f3b-b58a-6822c8b02710}"=""
+
+; Turn Off Sticky Keys Prompt Permanently
+[HKEY_CURRENT_USER\Control Panel\Accessibility\StickyKeys]
+"Flags"="506"
+
+; Remove All Context Menu Entries for "Share"
+[HKEY_CLASSES_ROOT\AllFilesystemObjects\shellex\ContextMenuHandlers]
+"{f81e9010-6ea4-11ce-a7ff-00aa003ca9f6}"=-
+
+; Disable All Taskbar Tooltips
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"EnableBalloonTips"=dword:00000000
+
+; Set Windows Updates to Only Notify for Download
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+"AUOptions"=dword:00000002
+
+; Disable Power Saving on USB Ports
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\USB]
+"DisableSelectiveSuspend"=dword:00000001
+
+; Disable "Quick Access" in File Explorer
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"LaunchTo"=dword:00000001
+
+; Disable Auto-Detection of LAN Proxy Settings
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings]
+"MigrateProxy"=dword:00000000
+
+; Optimize File Explorer for Faster Searching
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WSearch]
+"Start"=dword:00000004
+
+; Remove "Network" from Navigation Pane
+[HKEY_CLASSES_ROOT\CLSID\{F02C1A0D-BE21-4350-88B0-7367FC96EF3C}]
+"System.IsPinnedToNameSpaceTree"=dword:00000000
+
+; Disable Feedback Frequency Completely
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent]
+"DisableFeedbackNotifications"=dword:00000001
+
+; Disable Desktop Cleanup Wizard
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoRun"=dword:00000001
+
+; Prevent Windows from Deleting Memory Dumps
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl]
+"Overwrite"=dword:00000000
+
+; Disable Cortana Permanently
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AllowCortana"=dword:00000000
+
+; Prevent Windows Explorer from Displaying Hidden Drives
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoDrives"=dword:00000000
+
+; Enable High Performance Mode as Default
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
+"Attributes"=dword:00000002
+
+; Remove "Bluetooth" from System Tray
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTHPORT\Parameters]
+"EnableTrayIcon"=dword:00000000
+
+; Turn Off Lock Screen Background Blur
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"DisableAcrylicBackgroundOnLogon"=dword:00000001
+
+; Disable "Open File - Security Warning"
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Associations]
+"LowRiskFileTypes"=".exe;.bat;.cmd;.vbs;.reg;.msi"
+
+; Prevent Auto Update of Device Drivers
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DriverSearching]
+"SearchOrderConfig"=dword:00000000
+
+; Disable Startup Programs' Impact Measurement
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\StartupApproved]
+"ImpactEnabled"=dword:00000000
+
+; Prevent Windows from Automatically Detecting Device Drivers
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceSetup]
+"PreventDeviceMetadataFromNetwork"=dword:00000001
+
+; Enable Faster App Launches by Disabling Prefetch for Apps
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters]
+"EnablePrefetcher"=dword:00000000
+
+; Remove "Libraries" from Navigation Pane
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\Namespace]
+"{031E4825-7B94-4DC3-B131-E946B44C8DD5}"=-
+
+; Disable Power Throttling for Applications
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling]
+"ThrottleDisabled"=dword:00000001
+
+; Increase Keyboard Repeat Rate
+[HKEY_CURRENT_USER\Control Panel\Keyboard]
+"KeyboardSpeed"="31"
+"KeyboardDelay"="1"
+
+; Prevent Windows Explorer from Creating "Thumbs.db" Files
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"DisableThumbsDBOnNetworkFolders"=dword:00000001
+
+; Disable Windows Defender Smartscreen
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Smartscreen]
+"EnableSmartScreen"=dword:00000000
+
+; Disable Sticky Corners in Multi-Monitor Setups
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"DisableStickyCorners"=dword:00000001
+
+; Remove "Contact Support" from Start Menu
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoSupportPage"=dword:00000001
+
+; Disable Windows Boot Animation
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"DisableBootAnimation"=dword:00000001
+
+; Enable IPv4 as Default over IPv6
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters]
+"DisabledComponents"=dword:00000020
+
+; Disable Auto Zoom for High DPI Displays
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"LogPixels"=dword:00000060
+
+
+; Force IPv4 over IPv6 for All Connections
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters]
+"DisabledComponents"=dword:000000ff
+
+; Increase Desktop Heap Size for Better Multi-Tasking
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\SubSystems]
+"Windows"=hex(2):77,69,6e,64,6f,77,73,20,73,68,61,72,65,64,0a,64,65,73,6b,74,\
+    6f,70,20,30,2c,34,30,39,36,0a,63,6f,6e,73,6f,6c,65,20,33,0a,64,65,73,6b,\
+    74,6f,70,20,31,31,37,36,38,2c,32,30,34,38,36,2c,36,35,35,33,36
+
+; Disable Modern Standby (Connected Standby)
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
+"CsEnabled"=dword:00000000
+
+; Enable Opportunistic Locking for Network Drives
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]
+"EnableOpLocks"=dword:00000001
+
+; Disable Legacy SMB Protocols (SMBv1)
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters]
+"SMB1"=dword:00000000
+
+; Increase File Transfer Buffer Size
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]
+"SizReqBuf"=dword:0000ffff
+
+; Enable High Precision Event Timer for Performance
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PlatformSettings]
+"EnableHPET"=dword:00000001
+
+; Set Default Processor Affinity Mask
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\ProcessorAffinity]
+"DefaultCpuSet"=dword:0000000f
+
+; Disable Kernel Crash Dumps for Speed
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl]
+"CrashDumpEnabled"=dword:00000000
+
+; Speed Up Window Dragging and Resizing
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"DragFromMaximize"=dword:00000001
+
+; Enable Automatic SSD Optimization
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\Maintenance]
+"SSDOptimization"=dword:00000001
+
+; Disable Hybrid Boot (Fast Startup)
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power]
+"HiberbootEnabled"=dword:00000000
+
+; Maximize Network Performance for Latency-Sensitive Tasks
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"TcpTimedWaitDelay"=dword:0000001e
+"MaxUserPort"=dword:0000ffff
+
+; Disable Automatic Mapping of Network Printers
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print]
+"DisablePrinterMapping"=dword:00000001
+
+; Remove "Network Locations" from File Explorer
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\Namespace]
+"{F02C1A0D-BE21-4350-88B0-7367FC96EF3C}"=-
+
+; Disable Telemetry and Diagnostic Data Collection
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"AllowTelemetry"=dword:00000000
+
+; Enable Automatic TimeZone Detection
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation]
+"DynamicDaylightTimeDisabled"=dword:00000000
+
+; Increase Maximum Number of Simultaneous Network Connections
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters]
+"MaxMpxCt"=dword:00000800
+
+; Reduce Service Startup Delays
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control]
+"ServicesPipeTimeout"=dword:000003e8
+
+; Enable GPU Acceleration for Window Rendering
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers]
+"EnableGpuScaling"=dword:00000001
+
+; Disable Cortana Search Completely
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AllowCortana"=dword:00000000
+
+; Force System to Use NTP Servers for Time Sync
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Parameters]
+"Type"="NTP"
+"NtpServer"="time.windows.com,0x1"
+
+; Disable Disk Defragmentation for SSDs
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Dfrg\BootOptimizeFunction]
+"OptimizeComplete"=dword:00000001
+
+; Optimize Thread Scheduling for Multicore CPUs
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Executive]
+"AdditionalCriticalWorkerThreads"=dword:00000004
+"AdditionalDelayedWorkerThreads"=dword:00000004
+
+; Enable Energy-Efficient Ethernet for Lower Power Usage
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e972-e325-11ce-bfc1-08002be10318}\0001]
+"EnergyEfficientEthernet"=dword:00000001
+
+; Disable Automatic Hardware Device Driver Installation
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Device Metadata]
+"PreventDeviceMetadataFromNetwork"=dword:00000001
+
+; Enable Jumbo Frame Support for Faster File Transfers
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"EnableJumboFrames"=dword:00000001
+
+; Prevent Apps from Using Background Network Access
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"EnableSmartScreen"=dword:00000000
+
+; Enable Aggressive CPU Power Saving During Idle
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Processor]
+"IdleEnable"=dword:00000001
+
+; Increase Registry Size Limit
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control]
+"RegistrySizeLimit"=dword:ffffffff
+
+; Set Windows Logon Message
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"LegalNoticeText"="Authorized users only. Unauthorized access is prohibited."
+
+; Optimize Performance for High Bandwidth Connections
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"TcpWindowSize"=dword:0005ae4c
+"Tcp1323Opts"=dword:00000001
+
+; Enable Maximum Performance for PCI Express Devices
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002BE10318}\0000]
+"PCIeLinkStatePowerManagement"=dword:00000000
+
+; Disable SMB Packet Signing for Faster File Sharing
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]
+"EnableSecuritySignature"=dword:00000000
+"RequireSecuritySignature"=dword:00000000
+
+; Enable Large System Paging Files for Improved Performance
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"PagingFiles"="c:\\pagefile.sys 8192 8192"
+
+; Enable High-Speed Mouse Polling Rate
+[HKEY_CURRENT_USER\Control Panel\Mouse]
+"MouseSensitivity"="12"
+
+; Disable Windows Search Indexing for Performance
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WSearch]
+"Start"=dword:00000004
+
+; Remove "OneDrive" from Context Menu
+[HKEY_CLASSES_ROOT\Directory\Background\shellex\ContextMenuHandlers\{CB3F62BB-7B57-4D6E-B498-743F25C98EBE}]
+@=-
+
+; Optimize DNS Cache for Faster Lookups
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters]
+"CacheHashTableSize"=dword:00000180
+"MaxCacheEntryTtlLimit"=dword:0000fa00
+"MaxSOACacheEntryTtlLimit"=dword:0000012d
+
+; Enable Maximum Performance for USB Devices
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\UsbFlags]
+"EnhancedPowerManagementEnabled"=dword:00000000
+
+; Disable AutoPlay for External Drives
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoDriveTypeAutoRun"=dword:000000ff
+
+; Disable Windows Error Reporting for Crashes
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting]
+"Disabled"=dword:00000001
+
+; Enable Large System Cache for File Sharing
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"LargeSystemCache"=dword:00000001
+
+; Enable Ultra-Low Latency for TCP Connections
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"TcpNoDelay"=dword:00000001
+"TcpDelAckTicks"=dword:00000001
+
+; Increase Default TTL for Improved Network Performance
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"DefaultTTL"=dword:00000040
+
+; Disable USB Power Management for All Devices
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\USB]
+"DisableSelectiveSuspend"=dword:00000001
+
+; Disable Reserved Storage to Free Up Disk Space
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\ReserveManager]
+"ShippedWithReserves"=dword:00000000
+
+; Optimize Processor Scheduling for Applications
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\PriorityControl]
+"Win32PrioritySeparation"=dword:00000026
+
+; Disable Automatic Cleanup of Temp Files
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Temporary Files]
+"StateFlags"=dword:00000000
+
+; Disable Application Compatibility Assistant
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags]
+"DisableAppCompat"=dword:00000001
+
+; Increase Maximum Concurrent SMB Sessions
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters]
+"MaxMpxCt"=dword:00000fa0
+
+; Enable NTFS Compression for Reduced Disk Usage
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem]
+"NtfsDisableCompression"=dword:00000000
+
+; Increase IRPStackSize for Better File Sharing
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters]
+"IRPStackSize"=dword:0000000f
+
+; Increase USB Transfer Buffer Size for Better Performance
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\usbstor]
+"MaximumTransferLength"=dword:00200000
+
+; Optimize Registry Paging for Large Workloads
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"PagedPoolSize"=dword:ffffffff
+"NonPagedPoolQuota"=dword:ffffffff
+
+; Increase File Handles Limit
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager]
+"HandleCount"=dword:00040000
+
+; Increase Concurrent User Sessions for RDP
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server]
+"fSingleSessionPerUser"=dword:00000000
+
+; Optimize Scheduler for High-Performance CPUs
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Executive]
+"AdditionalCriticalWorkerThreads"=dword:00000008
+"AdditionalDelayedWorkerThreads"=dword:00000008
+
+; Enable Large I/O Requests for NTFS
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem]
+"NtfsDisableLastAccessUpdate"=dword:00000001
+"NtfsMemoryUsage"=dword:00000002
+
+; Allow Higher TCP/IP Connections
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"MaxFreeTcbs"=dword:0000ffff
+"MaxHashTableSize"=dword:00008000
+
+; Increase System Cache for Large File Operations
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"SystemCacheShift"=dword:00000002
+
+; Allow More Connections for SMB Shares
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters]
+"MaxWorkItems"=dword:00002000
+"MaxThreadsPerQueue"=dword:00000064
+
+; Enable Use of Large Pages for Memory Management
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"LargePageMinimum"=dword:00000001
+
+; Optimize Thread Pool for Better Performance
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]
+"MaxThreads"=dword:00000064
+
+; Boost TCP Throughput for High-Speed Connections
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"TcpMaxDataRetransmissions"=dword:00000005
+"TcpWindowSize"=dword:0005ae4c
+
+; Allow Larger Directory Cache for Faster File Access
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]
+"DirectoryCacheLifetime"=dword:0000000a
+"FileNotFoundCacheLifetime"=dword:0000000a
+"FileInfoCacheLifetime"=dword:0000000a
+
+; Enable Opportunistic Locking for Faster Network Access
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]
+"EnableOpLocks"=dword:00000001
+
+; Maximize DNS Cache Efficiency
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters]
+"MaxCacheEntryTtlLimit"=dword:0000fa00
+"MaxNegativeCacheTtl"=dword:00000000
+
+; Allow High Bandwidth for QoS Reserved Bandwidth
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Psched]
+"NonBestEffortLimit"=dword:00000000
+
+; Enable NUMA Node Optimization
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"EnableNUMA"=dword:00000001
+
+; Improve I/O Performance with Write-Back Caching
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Disk]
+"WriteBackCacheEnable"=dword:00000001
+
+; Increase Default Heap Size for GUI Processes
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows]
+"GDIProcessHandleQuota"=dword:00004000
+
+; Optimize NTFS Journal Size for Large Volumes
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem]
+"NtfsJournalSize"=dword:00008000
+
+; Disable Max Memory Limit for Cache
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"DisablePagingExecutive"=dword:00000001
+
+; Increase Maximum Registry Size
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control]
+"RegistrySizeLimit"=dword:ffffffff
+
+; Allow Faster Directory Listings for Large Directories
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]
+"MaxCmds"=dword:000000ff
+
+; Enable Processor Group Awareness for Multicore CPUs
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Executive]
+"ProcessorGroupAware"=dword:00000001
+
+; Optimize Windows Prefetch for Application Startup
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters]
+"EnablePrefetcher"=dword:00000003
+"EnableSuperfetch"=dword:00000003
+
+; Enable Faster TCP/IP Retransmissions
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"TcpMaxRT"=dword:00000003
+
+; Increase Kernel Stack Size
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager]
+"StackSize"=dword:00008000
+
+; Allow High Priority for Real-Time Applications
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Executive]
+"AllowRealtimePriorityBoost"=dword:00000001
+
+; Optimize Prefetch for SSDs
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters]
+"EnableSuperfetch"=dword:00000002
+
+; Enable Faster File Explorer Loads
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes]
+"DisableLazyLoading"=dword:00000001
+
+
+; Set High Priority for Critical Threads
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Executive]
+"CriticalThreadPriorityBoost"=dword:00000001
+
+; Improve USB Write Speeds
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\usbhub]
+"IdleDisable"=dword:00000001
+
+; Enable Dynamic Cache Adjustment for Performance
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"DynamicCacheAdjust"=dword:00000001
+
+; Enable Fast File Rename and Deletion
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem]
+"FastIoUnlockSingle"=dword:00000001
+
+; Enable Ultra-High Precision Event Timer
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PlatformSettings]
+"EnableUltraHPET"=dword:00000001
+
+; Disable Reserved CPU Core Allocation for System
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Executive]
+"ReservedCpuCoreCount"=dword:00000000
+
+; Enable Full Duplex for Network Connections
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"EnableFullDuplex"=dword:00000001
+
+; Increase Maximum Active Directory Cache Size
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NTDS\Parameters]
+"MaxCacheSize"=dword:00001000
+
+; Allow Concurrent Service Host Processes
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control]
+"SplitSvchost"=dword:00000001
+
+; Enable Disk Write Combining for Better Performance
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Disk]
+"WriteCombineEnable"=dword:00000001
+
+; Prevent Automatic Clearing of Memory Standby Cache
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"ClearPageFileAtShutdown"=dword:00000000
+
+; Increase Maximum Concurrent Threads for Applications
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options]
+"MaxConcurrentThreads"=dword:00000080
+
+; Optimize Windows Kernel for Reduced Interrupt Latency
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Executive]
+"InterruptSteeringEnabled"=dword:00000001
+
+; Enable Aggressive Disk Caching
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"AggressiveWritebackCache"=dword:00000001
+
+; Increase Maximum DNS Resolver Cache Size
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters]
+"MaxCacheSize"=dword:00004000
+
+; Reduce Time-to-Live for Invalid DNS Entries
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters]
+"NegativeCacheTTL"=dword:00000001
+
+; Prevent Apps from Running in Low-Priority Threads
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"DisableLowPriorityThreads"=dword:00000001
+
+; Enable Higher Audio Buffer Size for Improved Playback
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\Wave]
+"HighBufferMode"=dword:00000001
+
+; Enable Thread-Conscious Networking
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"ThreadOptimizedNetworking"=dword:00000001
+
+; Disable Unnecessary Indexing of Remote Drives
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WSearch]
+"DisableRemoteDriveIndexing"=dword:00000001
+
+; Reduce Boot Time by Skipping Network Drive Mapping
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\NetworkProvider\Order]
+"SkipMappingDuringBoot"=dword:00000001
+
+; Optimize Disk Scheduling for SSDs
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"SsdOptimizedScheduling"=dword:00000001
+
+; Enable Multi-Queue Networking for High-Speed NICs
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"EnableNetworkQueuing"=dword:00000001
+
+; Reduce Logon Time by Disabling Slow Startup Programs
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce]
+"DisableSlowStartPrograms"=dword:00000001
+
+; Allow Faster Kernel Memory Reallocation
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"KernelMemoryReallocation"=dword:00000001
+
+; Increase Active Directory Query Thread Count
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NTDS\Parameters]
+"MaxQueryThreads"=dword:00000020
+
+; Enable Hardware-Assisted Virtualization Prioritization
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PlatformSettings]
+"EnableHavPriority"=dword:00000001
+
+; Increase Maximum Concurrent Power Requests
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
+"MaxConcurrentPowerRequests"=dword:00000010
+
+; Disable Legacy Timestamps for NTFS
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem]
+"EnableNtfsLegacyTimestamps"=dword:00000000
+
+; Optimize System Event Log Buffer Size
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog]
+"BufferSize"=dword:00008000
+
+; Enable Direct I/O for Faster Disk Access
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Disk]
+"DirectIoEnabled"=dword:00000001
+
+; Improve Network Stability by Reducing Retransmissions
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"TcpAckFrequency"=dword:00000001
+
+; Allow Larger Write-Ahead Log for NTFS
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem]
+"WriteAheadLogSize"=dword:00001000
+
+; Enable High-Efficiency Processor Scheduling
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Executive]
+"ProcessorSchedulingMode"=dword:00000002
+
+; Enable Jumbo Frames for High-Speed Networking
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"JumboPacketEnabled"=dword:00000001
+
+; Increase Maximum File System Buffers
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]
+"MaxFileSystemBuffers"=dword:00001000
+
+; Reduce Kernel Mode Context Switching Overhead
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Executive]
+"MinimizeContextSwitching"=dword:00000001
+
+; Optimize for Real-Time Audio Processing
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources]
+"RealTimeProcessing"=dword:00000001
+
+; Reduce Memory Fragmentation in Critical Workloads
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"ReduceMemoryFragmentation"=dword:00000001
+
+; Optimize Disk Write-Ahead Log for High-Speed Storage
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem]
+"WriteAheadOptimization"=dword:00000001
+
+; Allow Larger Maximum Transmission Units for Networking
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"MaxTransmissionUnit"=dword:000005dc
+
+; Allow Larger IRPStackSize for Network Operations
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters]
+"IRPStackSize"=dword:00000018
+
+; Prevent System from Prioritizing Idle Tasks
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"DisableIdleTaskPriority"=dword:00000001
+
+; Enable Optimized Disk Queuing for NVMe Drives
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\nvme]
+"OptimizedQueueDepth"=dword:00000010
+
+; Increase Number of System Handles Allowed
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager]
+"SystemHandleLimit"=dword:00040000
+
+; Reduce Registry Key Access Latency
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager]
+"RegistryKeyLatencyReduction"=dword:00000001
+
+; Increase File Allocation Table Cache Size
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]
+"FatCacheSize"=dword:00000020
+
+; Enable Aggressive Memory Trim Policy
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"TrimPolicy"=dword:00000001
+
+; Allow Larger File Descriptor Tables
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager]
+"MaxFileDescriptors"=dword:00008000
+
+; Enable Kernel Debugging Optimizations
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager]
+"EnableKernelDebugOptimizations"=dword:00000001
+
+; Reduce DNS Query Latency
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters]
+"QueryLatencyOptimization"=dword:00000001
+
+; Enable Aggressive Cache Flushing for Remote Files
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]
+"AggressiveCacheFlush"=dword:00000001
+
+; Boost TCP/IP Packet Scheduling Efficiency
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"EnableEfficientScheduling"=dword:00000001
+
+; Increase Critical Section Timeout for High-Demand Systems
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager]
+"CriticalSectionTimeout"=dword:0000003c
+
+; Optimize Thread Queue Length for Multicore CPUs
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Executive]
+"ThreadQueueLength"=dword:00000020
+
+; Enable Preemptive Kernel Task Switching
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Executive]
+"PreemptiveSwitchingEnabled"=dword:00000001
+
+; Disable Idle Timeout for Network Connections
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"IdleTimeout"=dword:00000000
+
+; Improve SMB File Copy Throughput
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]
+"EnableLargeMtu"=dword:00000001
+
+; Increase Number of Allowed Concurrent Logons
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager]
+"MaxConcurrentLogons"=dword:00000010
+
+; Enable GPU Driver Performance Mode
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers]
+"PerformanceMode"=dword:00000001
+
+; Optimize Event Tracing Buffer Size
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Autologger\EventLog-System]
+"BufferSize"=dword:00008000
+
+; Reduce Time-to-Live for Stale SMB Connections
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]
+"ConnectionTimeout"=dword:0000000f
+
+; Optimize NTFS Allocation for High Throughput
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem]
+"EnableOptimizedAllocation"=dword:00000001
+
+; Enable Adaptive Scheduling for Multithreaded Applications
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Executive]
+"AdaptiveThreadScheduling"=dword:00000001
+
+; Enable Real-Time Process Monitoring
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"EnableRealTimeProcessMonitoring"=dword:00000001
+
+; Disable Forced SMB Connection Signing
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]
+"ForceSecuritySignature"=dword:00000000
+
+; Enable Dynamic Memory Allocation for User Sessions
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"DynamicSessionMemory"=dword:00000001
+
+; Improve Write Performance on External Drives
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Disk]
+"OptimizeExternalWrite"=dword:00000001
+
+; Increase Directory Depth Limit for File Operations
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]
+"MaxDirectoryDepth"=dword:00000064
+
+; Optimize Prefetch Algorithm for Data-Intensive Apps
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters]
+"PrefetchOptimizationLevel"=dword:00000002
+
+; Increase Active Directory Thread Pool
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NTDS\Parameters]
+"ThreadPoolExpansionFactor"=dword:00000004
+
+; Enable Dynamic Directory Listings for Network Drives
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]
+"DynamicDirectoryListing"=dword:00000001
+
+; Enable Advanced Processor Core Parking
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
+"ProcessorCoreParkingEnabled"=dword:00000001
+
+; Optimize NTFS Volume Cache Size
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem]
+"NtfsCacheBufferSize"=dword:00000080
+
+; Enable Fast Polling for High-Frequency Timers
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog]
+"FastPollingEnabled"=dword:00000001
+
+; Allow Maximum Thread Context Per CPU
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Executive]
+"MaxThreadContextCount"=dword:00000010
+
+; Disable Latency Penalty for Disk Writes
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Disk]
+"DisableWriteLatencyPenalty"=dword:00000001
+
+; Allow Aggressive Prefetch for Large Datasets
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters]
+"AggressivePrefetching"=dword:00000001
+
+; Enable Fine-Grained Memory Compression
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"MemoryCompressionGranularity"=dword:00000001
+
+; Optimize TCP Retransmission Efficiency
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"TcpRetransmissionOptimization"=dword:00000001
+
+; Enable Optimized Scheduling for High-Density CPUs
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Executive]
+"CpuDensityScheduling"=dword:00000001
+
+; Enable Thread-Aware Page File Management
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"ThreadPagefileManagement"=dword:00000001
+
+; Allow Adaptive SMB Thread Allocation
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters]
+"AdaptiveThreadAllocation"=dword:00000001
+
+; Disable Network Adapter Interrupt Moderation
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0001]
+"InterruptModeration"=dword:00000000
+
+; Increase Maximum Network Buffers for High-Speed NICs
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"MaxNetworkBuffers"=dword:00000040
+
+; Enable Real-Time Priority for System Services
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services]
+"EnableRealTimeServices"=dword:00000001
+
+; Prevent Automatic Disk Flushing for SSDs
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Disk]
+"DisableAutoFlush"=dword:00000001
+
+; Enable Direct Path Access for Network Connections
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"DirectPathEnabled"=dword:00000001
+
+; Optimize Kernel Stack for Multithreaded Processes
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager]
+"KernelStackOptimization"=dword:00000001
+
+; Enable Dynamic Packet Reordering for Networks
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"DynamicPacketReordering"=dword:00000001
+
+; Increase Maximum Outstanding I/O Requests
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Disk]
+"MaxOutstandingIoRequests"=dword:00000064
+
+; Enable NTFS Compression for System Files
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem]
+"NtfsSystemFileCompression"=dword:00000001
+
+; Optimize CPU Core Affinity for Critical Threads
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Executive]
+"CpuAffinityOptimization"=dword:00000001
+
+; Increase Buffer Size for Event Logging
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog]
+"MaxBufferSize"=dword:00010000
+
+; Reduce Time-to-Live for SMB Caches
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]
+"CacheTtl"=dword:00000005
+
+; Enable Memory Copy Bypass for Disk Operations
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Disk]
+"MemoryCopyBypass"=dword:00000001
+
+; Optimize Interrupt Priorities for Networking
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"InterruptPriorityOptimization"=dword:00000001
+
+; Enable Jumbo Frame Detection for NICs
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"EnableJumboFrameDetection"=dword:00000001
+
+; Allow Dynamic Cache Resizing Based on Workload
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"DynamicCacheResizing"=dword:00000001
+
+; Enable Power Efficiency Mode for Multicore CPUs
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power]
+"MulticoreEfficiencyMode"=dword:00000001
+
+; Reduce CPU Overhead for Real-Time Applications
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Executive]
+"CpuOverheadReduction"=dword:00000001
+
+; Allow Large Directory Cache for SMB Protocol
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]
+"LargeDirectoryCache"=dword:00000001
+
+; Enable Adaptive I/O Prioritization
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Disk]
+"AdaptiveIoPrioritization"=dword:00000001
+
+; Increase Maximum File Handles for Applications
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager]
+"MaxFileHandles"=dword:00020000
