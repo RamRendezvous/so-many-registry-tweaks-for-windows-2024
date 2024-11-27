@@ -1419,12 +1419,6 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters]
 "DisabledComponents"=dword:000000ff
 
-; Increase Desktop Heap Size for Better Multi-Tasking
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\SubSystems]
-"Windows"=hex(2):77,69,6e,64,6f,77,73,20,73,68,61,72,65,64,0a,64,65,73,6b,74,\
-    6f,70,20,30,2c,34,30,39,36,0a,63,6f,6e,73,6f,6c,65,20,33,0a,64,65,73,6b,\
-    74,6f,70,20,31,31,37,36,38,2c,32,30,34,38,36,2c,36,35,35,33,36
-
 ; Disable Modern Standby (Connected Standby)
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
 "CsEnabled"=dword:00000000
