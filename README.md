@@ -83,6 +83,12 @@ Always back up your registry (see below) before applying any changes. Misusing r
                 NTUSER.DAT (for user-specific settings).
                 UsrClass.dat (application-specific settings).
 
+## Restoring the Registry
+
+To restore a hive from the backup, you can use reg restore:
+
+`reg restore "HKEY_LOCAL_MACHINE\SYSTEM" "C:\RegistryBackup\SYSTEM.hiv"`
+
 ## Offline Backup for Complete Coverage
  If the system is offline, the most comprehensive method is to copy the raw registry hive files directly:
  Steps for Offline Backup:
