@@ -1079,10 +1079,6 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent]
 "DisableFeedbackNotifications"=dword:00000001
 
-; Disable Desktop Cleanup Wizard
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
-"NoRun"=dword:00000001
-
 ; Prevent Windows from Deleting Memory Dumps
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl]
 "Overwrite"=dword:00000000
