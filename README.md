@@ -28,7 +28,7 @@ A massive collection of advanced Windows registry tweaks for performance, custom
 
 1. Clone the repository.
 2. Backup your registry.
-3. Choose the `.reg` file you need and merge it into your registry.
+3. Choose the `updated_optimized_hardened_dedup.reg` file you need and merge it into your registry.
 
 ---
 
